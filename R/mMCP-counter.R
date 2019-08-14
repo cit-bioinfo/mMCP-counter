@@ -67,6 +67,7 @@ mMCPcounter.estimate <- function(exp){
   data("mMCPcounter_signatures",  envir=sys.frame(sys.nframe()))
   expAg <- exp[mMCPcounter_signatures$Gene.Symbol,]
   expAg <- cit.dfAggregate(expAg,mMCPcounter_signatures$Denomination,fAggreg = median.na)
+  expAg <- expAg[c("T cells", "CD8 T cells", "NK cells", "B derived", "Memory B cells", "Monocytes / macrophages", "Monocytes", "Granulocytes", "Mast cells", "Eosinophils", "Neutrophils", "Basophils", "Vessels", "Lymphatics", "Endothelial cells", "Fibroblasts"),]
   return(expAg)
 }
 
