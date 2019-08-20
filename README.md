@@ -1,13 +1,23 @@
 # mMCP-counter
-Murine version of MCP-counter, a tool to estimate the immune and stromal composition of heterogeneous tissue, from transcriptomic data.
+Murine version of MCP-counter, a tool to estimate the immune and stromal composition of heterogeneous tissue, from transcriptomic data. It is distributed as a R package.
 
 Installation
 ========
-Install from the GitHub repository using devtools:
+In a R session, install from the GitHub repository using devtools:
 
     install.packages("devtools")
     library(devtools)
     devtools::install_github("cit-bioinfo/mMCP-counter")
+
+Usage
+========
+The mMCP-counter package exports one function, mMCPcounter.estimate. To use it:
+
+    library("mMCPcounter")
+    mMCPcounter.estimate(expressionData)
+
+See ?mMCPcounter.estimate for more details.
+
 
 Citation
 ========
