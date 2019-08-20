@@ -16,7 +16,9 @@ The mMCP-counter package exports one function, mMCPcounter.estimate. To use it:
     library("mMCPcounter")
     mMCPcounter.estimate(expressionData)
 
-See ?mMCPcounter.estimate for more details.
+For more details, please refer to:
+
+    ?mMCPcounter::mMCPcounter.estimate
 
 
 Citation
