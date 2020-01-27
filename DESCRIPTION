@@ -3,7 +3,7 @@ Type: Package
 Title: murine Microenvironment Cell Population counter
 Version: 1.0.0
 Date: 2018-04-10
-Author: Aurelien de Reynies, Florent Petitprez
+Author: Florent Petitprez, Aurelien de Reynies
 Maintainer:  Florent Petitprez <CITR@ligue-cancer.net>
 Description: Function to estimate the quantity of several immune and stromal cell populations form transcriptomic data in heterogeneous murine samples. This is a contribution from the Tumor Identity Cards (CIT) program founded by the Ligue Nationale Contre le Cancer (France).
 License: GPL
