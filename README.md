@@ -23,13 +23,13 @@ For more details, please refer to:
 
 Citation
 ========
-If you use MS.liverK in a scientific publication, please contact Florent Petitprez for citation info: florent[dot]petitprez[at]ligue-cancer[dot]net
+If you use mMCP-counter in a scientific publication, please contact Florent Petitprez for citation info: florent[dot]petitprez[at]ligue-cancer[dot]net
 
 
 License
 ========
 
-MS.liverK is a free software: you can redistribute it and/or modify
+mMCP-counter is a free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version.
