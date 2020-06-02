@@ -14,7 +14,7 @@ Usage
 The mMCP-counter package exports one function, mMCPcounter.estimate. To use it:
 
     library("mMCPcounter")
-    mMCPcounter.estimate(expressionData)
+    mMCPcounter.estimate(expressionData, features = c("Gene.Symbol","ENSEMBL.ID","Probes")[1])
 
 For more details, please refer to:
 
