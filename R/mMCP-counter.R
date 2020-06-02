@@ -63,14 +63,14 @@ median.na <- function (x) {
 # author >> F Petitprez
 # keyword >> ...
 # end
-mMCPcounter.estimate <- function(exp){
+mMCPcounter.estimate <- function(exp, features = c("Gene.Symbol","ENSEMBL.ID","Probes")[1]){
   data("mMCPcounter_signatures",  envir=sys.frame(sys.nframe()))
-  foundGenes <- intersect(mMCPcounter_signatures$Gene.Symbol,rownames(exp))
+  foundGenes <- intersect(mMCPcounter_signatures[,features],rownames(exp))
   if(length(foundGenes)==0){stop("No signature found in input row names. Please ensure these are gene symbols.")}
-  absentSignatures <- setdiff(unique(mMCPcounter_signatures$Denomination),unique(mMCPcounter_signatures[mMCPcounter_signatures$Gene.Symbol%in%rownames(exp),"Denomination"]))
+  absentSignatures <- setdiff(unique(mMCPcounter_signatures$Denomination),unique(mMCPcounter_signatures[mMCPcounter_signatures[,features]%in%rownames(exp),"Denomination"]))
   if(length(absentSignatures)>0){warning(paste("No genes were found for population(s): ",paste(absentSignatures,collapse = ", "),".",sep=""))}
-  localSig <- mMCPcounter_signatures[mMCPcounter_signatures$Gene.Symbol %in% foundGenes,]
-  expAg <- exp[localSig$Gene.Symbol,]
+  localSig <- mMCPcounter_signatures[mMCPcounter_signatures[,features] %in% foundGenes,]
+  expAg <- exp[localSig[,features],]
   expAg <- cit.dfAggregate(expAg,localSig$Denomination,fAggreg = median.na)
   expAg <- expAg[c("T cells", "CD8 T cells", "NK cells", "B derived", "Memory B cells", "Monocytes / macrophages", "Monocytes", "Granulocytes", "Mast cells", "Eosinophils", "Neutrophils", "Basophils", "Vessels", "Lymphatics", "Endothelial cells", "Fibroblasts"),]
   expAg <- expAg[apply(expAg,1,function(x){sum(is.na(x))})<ncol(expAg),]
