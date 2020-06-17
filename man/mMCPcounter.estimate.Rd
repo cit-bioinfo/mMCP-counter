@@ -12,7 +12,7 @@ mMCPcounter.estimate(exp, features = c("Gene.Symbol","ENSEMBL.ID","Probes")[1])
 
 \arguments{
   \item{exp}{
-  data frame containing the expression data. Genes must be in lines and samples in columns. Gene symbols must be specified as rownames.
+  data frame containing the expression data. Genes must be in lines and samples in columns. Gene symbols must be specified as rownames. Gene expression data should be normalized and expressed in log scale.
 }
   \item{features}{
   One of "Gene.Symbol" (default), "ENSEMBL.ID" or "Probes". Specifies the format of the gene IDs. "Probes" refers to Affymetrix Mouse Gene 1.0 ST Array probes IDs.
