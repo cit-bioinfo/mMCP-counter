@@ -25,7 +25,7 @@ Citation
 ========
 If you use mMCP-counter in a scientific publication, please cite:
 
-Petitprez, F., Lévy, S., Sun, C.-M., Meylan, M., Linhard, C., Becht, E., Elarouci, N., Roumenina, L.T., Ayadi, M., Sautès-Fridman, C., Fridman, W.H. and de Reyniès, A. (2020). The murine Microenvironment Cell Population counter method to estimate abundance of tissue-infiltrating immune and stromal cell populations in murine samples using gene expression. BioRxiv 2020.03.10.985176.
+Petitprez, F., Lévy, S., Sun, C.-M., Meylan, M., Linhard, C., Becht, E., Elarouci, N., Tavel, D., Roumenina, L.T., Ayadi, M., Sautès-Fridman, C., Fridman, W.H. and de Reyniès, A. The murine Microenvironment Cell Population counter method to estimate abundance of tissue-infiltrating immune and stromal cell populations in murine samples using gene expression. Genome Med 12, 86 (2020). https://doi.org/10.1186/s13073-020-00783-w
 
 
 License
