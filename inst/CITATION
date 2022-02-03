@@ -1,0 +1,6 @@
+bibentry(bibtype = "Article",
+         title = "The murine Microenvironment Cell Population counter method to estimate abundance of tissue-infiltrating immune and stromal cell populations in murine samples using gene expression",
+         author = "Florent Petitprez and Sacha Levy and Cheng-Ming Sun and Maxime Meylan and Christophe Linhard and Etienne Becht and Nabila Elarouci and David Tavel and Lubka T. Roumenina and Mira Ayadi and Catherine Sautes-Fridman and Wolf H. Fridman and Aurelien de Reynies",
+         journal = "Genome Medicine",
+         year = 2020,
+         url = "https://doi.org/10.1186/s13073-020-00783-w")
