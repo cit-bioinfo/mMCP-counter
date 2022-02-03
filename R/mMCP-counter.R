@@ -74,9 +74,9 @@ mMCPcounter.estimate <- function(exp, features = c("Gene.Symbol","ENSEMBL.ID","P
     mMCPcounter_signatures = mMCPcounter_signatures_GCRm39
   }
   foundGenes <- intersect(mMCPcounter_signatures[,features],rownames(exp))
-  if(length(foundGenes)==0){stop("No signature found in input row names. Please ensure the features argument is accurately set.")}
+  if(length(foundGenes)==0){stop("No signature found in input row names. Please ensure the features and genomeVersion arguments are accurately set.")}
   absentSignatures <- setdiff(unique(mMCPcounter_signatures$Denomination),unique(mMCPcounter_signatures[mMCPcounter_signatures[,features]%in%rownames(exp),"Denomination"]))
-  if(length(absentSignatures)>0){warning(paste("No genes were found for population(s): ",paste(absentSignatures,collapse = ", "),".",sep=""))}
+  if(length(absentSignatures)>0){warning(paste("No genes were found for population(s): ",paste(absentSignatures,collapse = ", "),". Please ensure the genomeVersion argument is correct.",sep=""))}
   localSig <- mMCPcounter_signatures[mMCPcounter_signatures[,features] %in% foundGenes,]
   expAg <- exp[localSig[,features],]
   expAg <- cit.dfAggregate(expAg,localSig$Denomination,fAggreg = median.na)
