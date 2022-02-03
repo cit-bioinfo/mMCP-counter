@@ -1,3 +1,6 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5270300.svg)](https://doi.org/10.5281/zenodo.5270300)
+
+
 # mMCP-counter
 Murine version of MCP-counter, a tool to estimate the immune and stromal composition of heterogeneous tissue, from transcriptomic data. It is distributed as a R package.
 
