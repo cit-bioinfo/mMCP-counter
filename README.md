@@ -17,7 +17,7 @@ Usage
 The mMCP-counter package exports one function, mMCPcounter.estimate. To use it:
 
     library("mMCPcounter")
-    mMCPcounter.estimate(expressionData, features = c("Gene.Symbol","ENSEMBL.ID","Probes")[1])
+    mMCPcounter.estimate(expressionData, features = c("Gene.Symbol","ENSEMBL.ID","Probes")[1], genomeVersion = c("GCRm38","GCRm39")[2])
 
 For more details, please refer to:
 
@@ -29,6 +29,11 @@ Citation
 If you use mMCP-counter in a scientific publication, please cite:
 
 Petitprez, F., Lévy, S., Sun, C.-M., Meylan, M., Linhard, C., Becht, E., Elarouci, N., Tavel, D., Roumenina, L.T., Ayadi, M., Sautès-Fridman, C., Fridman, W.H. and de Reyniès, A. The murine Microenvironment Cell Population counter method to estimate abundance of tissue-infiltrating immune and stromal cell populations in murine samples using gene expression. Genome Med 12, 86 (2020). https://doi.org/10.1186/s13073-020-00783-w
+
+
+Acknowledgement
+========
+The authors thank Lorenzo Merotto for his help with the support of the new genome version GCRm39.
 
 
 License
