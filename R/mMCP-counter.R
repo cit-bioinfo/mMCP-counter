@@ -63,8 +63,9 @@ median.na <- function (x) {
 # author >> F Petitprez
 # keyword >> ...
 # end
-mMCPcounter.estimate <- function(exp, features = c("Gene.Symbol","ENSEMBL.ID","Probes")[1]){
-  data("mMCPcounter_signatures",  envir=sys.frame(sys.nframe()))
+mMCPcounter.estimate <- function(exp, features = c("Gene.Symbol","ENSEMBL.ID","Probes")[1], genomeVersion = c("GCRm38","GCRm39")[2]){
+  if(!genomeVersion %in% c("GCRm38","GCRm39")){stop("Supported genome version are GCRm38 and GCRm39. Please chose one of them and retry.")}
+  data(paste("mMCPcounter_signatures",genomeVersion,sep="_"),  envir=sys.frame(sys.nframe()))
   foundGenes <- intersect(mMCPcounter_signatures[,features],rownames(exp))
   if(length(foundGenes)==0){stop("No signature found in input row names. Please ensure the features argument is accurately set.")}
   absentSignatures <- setdiff(unique(mMCPcounter_signatures$Denomination),unique(mMCPcounter_signatures[mMCPcounter_signatures[,features]%in%rownames(exp),"Denomination"]))
