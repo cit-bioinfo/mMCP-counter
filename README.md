@@ -1,4 +1,4 @@
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5270300.svg)](https://doi.org/10.5281/zenodo.5270300)
+[![DOI](https://zenodo.org/badge/202098325.svg)](https://zenodo.org/badge/latestdoi/202098325)
 
 
 # mMCP-counter
