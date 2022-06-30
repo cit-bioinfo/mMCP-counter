@@ -6,7 +6,6 @@ Date: 2022-02-03
 Author: Florent Petitprez, Aurelien de Reynies
 Maintainer:  Florent Petitprez <florent.petitprez@ed.ac.uk>
 Description: Function to estimate the quantity of several immune and stromal cell populations form transcriptomic data in heterogeneous murine samples. This is a contribution from the Tumor Identity Cards (CIT) program founded by the Ligue Nationale Contre le Cancer (France).
-License: GPL
 Depends: R (>= 3.5.0)
 License: GPL-3
 
